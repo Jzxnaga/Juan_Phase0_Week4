@@ -37,7 +37,7 @@ let belibarang= {
     }
 }
 
-console.log (Object.value(belibarang.listbarang))
+console.log (Object.values(belibarang.listbarang))
 
 // var total = 0
 
