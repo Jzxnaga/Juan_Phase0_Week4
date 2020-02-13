@@ -5,7 +5,7 @@ function digitPerkalianMinimum(angka) {
     var perkalian;
     var pengali;
     
-    for (var i = 0 ; i < 1000 ; i++){
+    for (var i = 0 ; i < angka ; i++){
        
         if(angka%i==0){
         perkalian=angka/i;
