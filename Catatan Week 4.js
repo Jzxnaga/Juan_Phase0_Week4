@@ -1,4 +1,6 @@
 // // mengakses index lebih mudah
+// // ARR . LENGTH menghitung jumlah data 
+// // namun mengakses arr length harus return[ARR.LENGTH-1] karna [] dimulai dari [0]
 
 // let people ={
 //     umur: 18,
@@ -30,14 +32,14 @@
 // console.log(people)
 
 // akses keys dalam keys
-let belibarang= {
-    listbarang:{
-        shampoo:10000,
-        sabun:5000
-    }
-}
+// let belibarang= {
+//     listbarang:{
+//         shampoo:10000,
+//         sabun:5000
+//     }
+// }
 
-console.log (Object.values(belibarang.listbarang))
+// console.log (Object.values(belibarang.listbarang))
 
 // var total = 0
 
@@ -79,7 +81,86 @@ console.log (Object.values(belibarang.listbarang))
 //     }
 
 // }
+// // looping nama saja
+// for (var i = 0 ; i<data.length;i++)
+// console.log(data[i.name])
 
-// console.log(data)
+// // push new data
+// var newData = {
+//     nama:"Testaja"
+//     age:20
+// }
 
+// data.push(newData)
+
+
+// var students = {
+//     ["yoyok",90],
+//     ["fadhil",100],
+//     ["made",70]
+// }
+//     object = ["nama","nilai"]
+
+
+
+// var student = [
+//     {
+//     nama : "test",
+//     score : 90
+//     },
+//     {
+//     nama : "test1",
+//     score:100
+//     },
+//     {
+//     nama : "test2",
+//     score: 70
+//     },
+
+// ]
+
+// for (var i = 0 ; i < student.length ; i++){
+//     for ( var j = i+1 ; j < student.length ; j ++){
+//         if(student[j].score < student[i].score){
+//         var temp  = student[i];
+//         student [i] = student [j];
+//         student [j] = temp;
+//     }
+// }
+// }
+// console.log(student)
+
+
+
+// let obj={
+//     name:"juan",
+//     gender:"laki-laki",
+//     "8":"tesasdsa"
+// }
+
+// let name="name"
+
+// // console.log(obj.name) // langsung akses data di dalam [i]
+// console.log(obj[name]) //
+// console.log(obj["8"]) // << akses data dalam key tapi bentuk nya harus string
+
+// for(var key in obj ) {
+//     // console.log(obj[key])
+//     // console.log(key)
+// }
+
+// console.log(Object.keys(obj))
+// console.log(Object.entries(obj))
+// console.log(Object.values(obj))
+
+
+var abjad="abcdefghi"
+for(var i = 0 ; i<abjad.length ; i+=3){
+    var temp=""
+    for(var j = 0 ; j < 3; j++){
+        temp=temp+abjad[j+i]
+    }
+    console.log(temp)
+        
+}
 
