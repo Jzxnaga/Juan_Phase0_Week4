@@ -36,9 +36,10 @@ function countProfit(shoppers) {
       datapembelian={};
       totalprofit=0
       shopperss =[];
+      console.log (datapembeliantotal)
       }
     }
-
+    // console.log (datapembeliantotal)
     return datapembeliantotal
 // console.log(shoppers.length)
 // console.log(shoppers[0].name)// access name

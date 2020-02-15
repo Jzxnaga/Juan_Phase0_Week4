@@ -1,21 +1,34 @@
 // // mengakses index lebih mudah
 // // ARR . LENGTH menghitung jumlah data 
 // // namun mengakses arr length harus return[ARR.LENGTH-1] karna [] dimulai dari [0]
+// // Objek {}
+// // dapat diakses dengan var obj = {test : 'test1'} console.log(obj[0].test) == > test 1
+// // menambahkan key obj.testt = 'test2'
+// // menambahkan key obj['testt'] = test2'
+
+
+
+
 
 // let people ={
 //     umur: 18,
 //     nama: "Andi",
-//     "string apapun" : "asd",
+//     test : "asd",
 //     kota: "Jakarta"
 // }
+// var peoplearray = Object.keys(people)
+// console.log(peoplearray)
 
-
-// console.log(people.nama)
+// // console.log(people.nama)
 
 // // mengakses data di dalam properti
 // for (var key in people){
-// console.log(people[key])
+// // console.log(key)
+// // console.log(people.key)
+// console.log(peoplearray[0])
 // }
+
+// delete people.test
 
 // console.log(Object.keys(people)) // untuk akses keys nya doang
 // console.log(Object.entries[people]) // untuk akses semuanya
@@ -64,7 +77,9 @@
 // console.log(counter)
 
 // // MENGHITUNG ALL DARI AUTO COUNTER
-// var total = 0
+// var total = 0let name="name"
+// console.log(obj.name) // langsung akses data di dalam [i]
+// console.log(obj[name]) /
 // for (var keys in counter){
 //     total+=counter[keys]
 // }
@@ -116,24 +131,24 @@
   
 //   console.log(arr);
 
-var student = [
-    {
-    nama : "test",
-    score : 90
-    },
-    {
-    nama : "test1",
-    score:100
-    },
-    {
-    nama : "test2",
-    score: 70
-    },
+// var student = [
+//     {
+//     nama : "test",
+//     score : 90
+//     },
+//     {
+//     nama : "test1",
+//     score:100
+//     },
+//     {
+//     nama : "test2",
+//     score: 70
+//     },
 
-]
-console.log(student[0].score)
-console.log(student[1].score)
-console.log(student[2].score)
+// ]
+// console.log(student[0].score)
+// console.log(student[1].score)
+// console.log(student[2].score)
 
 // for (var i = 0 ; i < student.length ; i++){
 //     for ( var j = i+1 ; j < student.length ; j ++){
@@ -148,25 +163,32 @@ console.log(student[2].score)
 
 
 
-// let obj={
+// let obj={let name="name"
+// // console.log(obj.name) // langsung akses data di dalam [i]
+// // console.log(obj[name]) /
 //     name:"juan",
 //     gender:"laki-laki",
 //     "8":"tesasdsa"
 // }
 
 // let name="name"
-
-// // console.log(obj.name) // langsung akses data di dalam [i]
+// console.log(obj.name) // langsung akses data di dalam [i]
 // console.log(obj[name]) //
 // console.log(obj["8"]) // << akses data dalam key tapi bentuk nya harus string
 
 // for(var key in obj ) {
 //     // console.log(obj[key])
-//     // console.log(key)
+//     // console.lolet name="name"
+// console.log(obj.name) // langsung akses data di dalam [i]
+// console.log(obj[name]) /g(key)
 // }
 
 // console.log(Object.keys(obj))
-// console.log(Object.entries(obj))
+// console.log(Objectlet name="name"
+// console.log(obj.name) // langsung akses data di dalam [i]
+// console.log(obj[name]) /let name="name"
+// console.log(obj.name) // langsung akses data di dalam [i]
+// console.log(obj[name]) /.entries(obj))
 // console.log(Object.values(obj))
 
 

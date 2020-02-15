@@ -23,17 +23,21 @@ check = false
 for(var i=0 ; i<tempA.length ; i++){
     for(var j=0 ; j<tempB.length ; j++){
         if(tempA[i]-tempB[j] == 4){
-            return true
-        }else if(tempB[j]-tempA[i] == 4){
-            return true
-        }else{ 
-            return false 
-        }
+            check = true
         }
     }
-    return check
 }
 
+for(var i=0 ; i<tempB.length ; i++){
+    for(var j=0 ; j<tempA.length ; j++){
+        if(tempB[i]-tempA[j] == 4){
+            check = true
+        }
+    }
+}
+
+return check
+}
   
   // TEST CASES
   console.log(checkAB('lane borrowed')); // true
@@ -41,3 +45,4 @@ for(var i=0 ; i<tempA.length ; i++){
   console.log(checkAB('you are boring')); // true
   console.log(checkAB('barbarian')); // true
   console.log(checkAB('bacon and meat')); // false
+  console.log(checkAB('bbbbsdfa'))
