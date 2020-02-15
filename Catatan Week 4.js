@@ -192,7 +192,7 @@
 // console.log(Object.values(obj))
 
 
-// var abjad="abcdefghi"
+var abjad="abcdefghi"
 // for(var i = 0 ; i<abjad.length ; i+=3){
 //     var temp=""
 //     for(var j = 0 ; j < 3; j++){
