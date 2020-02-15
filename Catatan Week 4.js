@@ -191,6 +191,13 @@
 // console.log(obj[name]) /.entries(obj))
 // console.log(Object.values(obj))
 
+console.log(Object.keys(obj))
+// console.log(Objectlet name="name"
+// console.log(obj.name) // langsung akses data di dalam [i]
+// console.log(obj[name]) /let name="name"
+// console.log(obj.name) // langsung akses data di dalam [i]
+// console.log(obj[name]) /.entries(obj))
+// console.log(Object.values(obj))
 
 var abjad="abcdefghi"
 // for(var i = 0 ; i<abjad.length ; i+=3){
