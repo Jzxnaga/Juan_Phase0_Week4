@@ -183,6 +183,10 @@
 // console.log(obj[name]) /g(key)
 // }
 
+
+
+
+
 // console.log(Object.keys(obj))
 // console.log(Objectlet name="name"
 // console.log(obj.name) // langsung akses data di dalam [i]
