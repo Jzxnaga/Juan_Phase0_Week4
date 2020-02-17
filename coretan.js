@@ -188,206 +188,135 @@ Terdapat 3 bangku kosong, D1, D2, D3
 
 // function tempatduduk(duduk,dudukdimana2){
 
-// var hasil;
-// var ygksng = []
-// var asddsa = []
 
-// for (var i = 0 ; i < duduk.length ; i ++){
-//     for ( var j = 0 ; j < duduk[i].length ; j++){
-//             if(duduk[i][j] == ' '){
-//                 var temp = ''
-//                 temp = j
-//                 ygksng.push(duduk[i][0]+temp)
-//             }
-        
-//         }
-// asddsa.push(ygksng)
-// ygksng=[]
+
+// function graduates (students) {
+//   // Code disini
+// var obj1 = {}
+// var obj2 = {}
+// var sqr1= []
+
+// for(var i = 0 ; i < students.length ; i++){
+//   if(students[i].score > 75  ){
+//     // sqr1.push(students[i])
+//     obj1.name=students[i].name
+//     obj1.score=students[i].score
+//     obj1.class=students[i].class
+//     sqr1.push(obj1)
+//     obj1={}
+//   }
+// }
+
+// for(var i = 0 ; i < sqr1.length ; i++){
+//   obj2[sqr1[i].class]=[]
+//   for (var j = 0 ; j < sqr1.length ; j ++){
+//     if(sqr1[i].class === sqr1[j].class){
+//       obj2[sqr1[i].class].push(sqr1[j])
 //     }
-// if (dudukdimana2 == 'A' ){
-//     hasil = 'terdapat ' +asddsa[1].length + ' yang kosong ' + asddsa[1]
-//     return hasil
-// } else if (dudukdimana2 == 'B' ){
-//     hasil = 'terdapat ' + asddsa[2].length + ' yang kosong ' + asddsa[2]
-//     return hasil
-// } else if (dudukdimana2 == 'C' ){
-//     hasil = 'terdapat ' +asddsa[3].length + ' yang kosong ' + asddsa[3]
-//     return hasil
-// } else if (dudukdimana2 == 'D' ){
-//     hasil = 'terdapat ' +asddsa[4].length + ' yang kosong ' + asddsa[4]
-//     return hasil
+//   }
+// }
+
+// return obj2
+// }
+
+// console.log(graduates([
+//   {
+//     name: 'Dimitri',
+//     score: 90,
+//     class: 'foxes'
+//   },
+//   {
+//     name: 'Alexei',
+//     score: 85,
+//     class: 'wolves'
+//   },
+//   {
+//     name: 'Sergei',
+//     score: 74,
+//     class: 'foxes'
+//   },
+//   {
+//     name: 'Anastasia',
+//     score: 78,
+//     class: 'wolves'
+//   }
+// ]));
+
+
+// function hitung(votes) {
+
+// var obj = {}
+// var check = 0
+
+// for( var i = 0 ; i < votes.length ; i ++){
+//   obj[votes[i]]=[]  
+//   for(var j = 0 ; j < votes . length ; j ++){
+//   if(votes[j]==votes[i]){
+//     check++
+//   }
+// }
+// obj[votes[i]].push(check)
+// check=0
+// }
+// return obj
+// }
+
+// var obj = {}
+
+// for( var i = 0 ; i < votes.length ; i++){
+//   obj[votes[i]]=1
+
 // }
 
 
 
-
-// console.log (asddsa)
-
-// // return totalkosong
+// return obj
 
 // }
 
 
 
+// console.log(hitung(['Denis', 'Arby', 'Arby', 'Janice']))
 
 
-// // }
+// function americanGotTalent (votes) {
+//   var winner = ''
+//   var check1 = 0
+//   var second = ''
+//   var check2 = 0
+//   for (i = 0; i < votes.length; i++) {
+//     var counter = 0
+//     for (j = 0; j < votes.length; j++) {
+//       if(votes[i] === votes[j]){
+//         counter++
+//       }
+//     }
+//     if(check1 < counter){
+//       winner = votes[i]
+//       check1 = counter
+//     } else if(check1 === counter && winner !== votes[i]){
+//       check2 = counter
+//     } 
+//   }
+//  // DISPLAY
+//   if(check1  === check2){
+//     return `Mohon maaf juara tidak bisa ditentukkan dalam minggu ini`
+//   } else{
+//     return `Selamat juaranya adalah ${winner} , dengan total votes yang diterima ${check1}.`
+//   }
+//  }
+ 
+//  console.log(americanGotTalent(['Denis', 'Arby', 'Darren', 'Denis', 'Arby','Arby']))
+//  // Selamat juaranya adalah Lee Min Ho, dengan total votes yang diterima 2
 
 
-// console.log(tempatduduk([
-//     ['ROW', '1', '2', '3', '4', '5', '6'],
-//     ['A', 'X', 'X', 'X', 'X', ' ', ' '],
-//     ['B', ' ', 'X', ' ', ' ', ' ', ' '],
-//     ['C', 'X', 'X', 'X', 'X', ' ', ' '],
-//     ['D', ' ', ' ', ' ', 'X', 'X', 'X'],
-//   ],'A'))
+var obj = [['a'],['b'],['c'],['e'],['d']]
+var obj2 = []
 
-// Diberikan arr object nilai-nilai murid dengan struktur object nama, score dan class,
-// tugas anda adalah memanipulasi data tersebut dengan meng-group berdasarkan
-// kelas dan sort ascending untuk score-nya!
-
-// [EXAMPLE]
-// - Bila arr of ojects adalah :
-
-
-function arr (test){
-
-
-Kelas = {}
-array = []
-obj = {}
-
-
-for (var i = 0 ; i < test.length ; i ++ ){
-    for( var j = i+1 ; j < test.length ; j++)
-    if( test[i].score < test[j].score){
-        var temp = test [i]
-        test [i] = test [j]
-        test [j] = temp
-    }
-
+for(var i = obj.length-1 ; i>=0 ; i--){
+  obj[obj.length-i] =obj[i]
+  var temp = obj[i]
+  obj[i] = obj[obj.length-1]
+  obj[obj.length-i] = temp
 }
-// console. log (test) // ini sudah berurut //
-
-    for (var i = 0 ; i < test.length ; i ++ ){
-        obj[test[i].class] = []
-        
-        for ( var j = 0 ; j < test.length ; j++){
-            if(test[i].class == test[j].class) {
-                obj[test[i].class].push(test[j])
-            }
-        }
-    
-    }
-
-return obj
-
-}
-
-// return test // tapi pengen bikin // { A:
-//                [ { name: 'david', score: 32 },
-//                  { name: 'amy', score: 80 },
-//                  { name: 'debby', score: 100 } ],
-//               B:
-//                [ { name: 'aakansha', score: 75 },
-//                  { name: 'heraldo', score: 90 },
-//                  { name: 'arnold', score: 100 } ],
-//               C: [ { name: 'aleksa', score: 90 } ] }
-
-console.log(arr(
- [
-    {
-      name: 'debby',
-      score: 100,
-      class: 'A'
-    },
-    {
-      name: 'amy',
-      score: 80,
-      class: 'A'
-    },
-    {
-      name: 'david',
-      score: 32,
-      class: 'A'
-    },
-    {
-      name: 'heraldo',
-      score: 90,
-      class: 'B'
-    },
-    {
-      name: 'arnold',
-      score: 100,
-      class: 'B'
-    },
-    {
-      name: 'aakansha',
-      score: 75,
-      class: 'B'
-    },
-    {
-      name: 'aleksa',
-      score: 90,
-      class: 'C'
-    }
-  ]
-)
-)
-// maka hasilnya adalah:
-// { A:
-//    [ { name: 'david', score: 32 },
-//      { name: 'amy', score: 80 },
-//      { name: 'debby', score: 100 } ],
-//   B:
-//    [ { name: 'aakansha', score: 75 },
-//      { name: 'heraldo', score: 90 },
-//      { name: 'arnold', score: 100 } ],
-//   C: [ { name: 'aleksa', score: 90 } ] }
-
-// [RULE]
-// 1. dilarang menggunakan indexOf(), find(), filter(), shift(), unshift(), sort()
-// 2. dilarang menggunakan regex
-// */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(obj)

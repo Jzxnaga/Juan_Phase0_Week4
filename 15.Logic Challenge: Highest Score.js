@@ -15,7 +15,7 @@ function highestScore (students) {
         }
       }
     }
-    console.log (students)
+    // console.log (students)
     //diakalin di tiban sama yang paling gede
 
     
