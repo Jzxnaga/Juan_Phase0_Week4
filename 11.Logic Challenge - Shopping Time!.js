@@ -39,6 +39,7 @@ return 'Mohon maaf, uang tidak cukup'
                 datapembelian.listPurchased.push(barang[i].namabarang)
                 change=money-barang[i].harga
                 money=change
+                datapembelian.changeMoney=change
             }
         }
     }
