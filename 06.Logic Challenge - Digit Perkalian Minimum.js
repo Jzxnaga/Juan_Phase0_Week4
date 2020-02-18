@@ -12,11 +12,13 @@ function digitPerkalianMinimum(angka) {
         pengali = i;
         temp+= pengali.toString()+perkalian.toString()
         temp2.push(temp)
-        }
+        }else if (angka == 1){
+        return 1
+      }
      temp=""
     }
 
-    var min = 1000;
+    var min = Infinity
     for(var i=0;i<temp2.length;i++){
       if(temp2[i].length<min){
         min = temp2[i].length
@@ -31,4 +33,3 @@ function digitPerkalianMinimum(angka) {
   console.log(digitPerkalianMinimum(90)); // 3
   console.log(digitPerkalianMinimum(20)); // 2
   console.log(digitPerkalianMinimum(179)); // 4
-  console.log(digitPerkalianMinimum(1)); // 2

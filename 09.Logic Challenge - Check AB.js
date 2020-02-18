@@ -15,8 +15,6 @@ function checkAB(num) {
             temp=""
         }
     }
-console.log(tempA)
-console.log(tempB)
 
 check = false
 
